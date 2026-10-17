@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>شاشة البداية والترحيب</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.hero{width:220px;height:220px;border-radius:50%;background:#FFFFFF;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative}
+.hero .in{width:148px;height:148px;border-radius:50%;background:var(--onyx);display:flex;align-items:center;justify-content:center;color:#FFFFFF}
+.hero .in .ic{width:70px;height:70px;stroke-width:1.5}
+.hero .acc{position:absolute;top:16px;inset-inline-end:28px;width:28px;height:28px;border-radius:50%;background:var(--orange)}
+.hero .acc2{position:absolute;bottom:26px;inset-inline-start:22px;width:16px;height:16px;border-radius:50%;background:var(--charcoal)}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:1760px;height:1080px">
+  <div class="sheet-h"><h1>الشاشات ١–٢ · البداية والترحيب</h1><p>تظهر شاشة الترحيب مرة واحدة فقط، ويمكن تخطيها والتصفح مباشرة.</p><span class="sample">بيانات تجريبية للعرض فقط</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">١ · شاشة البداية<small>Splash — الشعار الأصلي دون تعديل</small></div>
+      <div class="phone"><div class="scr" style="align-items:center;justify-content:center;gap:40px">
+        <div style="box-shadow:var(--sh2);border-radius:20px;line-height:0"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:288px;height:288px;border-radius:20px"></div>
+        <div style="width:72px;height:4px;border-radius:2px;background:#D5CFD9;position:relative;overflow:hidden"><div style="position:absolute;inset-block:0;inset-inline-start:0;width:44px;background:var(--orange);border-radius:2px"></div></div>
+      </div></div>
+    </div>
+
+    <div>
+      <div class="cap">٢ أ · الترحيب — القطع والكماليات<small>Onboarding 1 of 3</small></div>
+      <div class="phone"><div class="scr" style="background:#FFFFFF;padding:16px 24px 28px">
+        <div style="display:flex;justify-content:flex-end;align-items:center;height:44px"><button class="btn btn-text">تخطَّ</button></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center">
+          <div class="hero"><div class="in"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg></div><span class="acc"></span><span class="acc2"></span></div>
+          <h2 style="font-size:26px;font-weight:700;line-height:1.4">قطع غيار وكماليات الدراجات النارية</h2>
+          <p class="muted" style="font-size:16px;max-width:300px;line-height:1.7">قطع محرك وفرامل وزيوت وإطارات وخوذ وإكسسوارات لدراجتك في مكان واحد.</p>
+        </div>
+        <div class="dots"><i class="on"></i><i></i><i></i></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px">
+          <button class="btn btn-primary btn-block btn-lg">التالي</button>
+          <button class="btn btn-text btn-block">تخطَّ وتصفح المتجر</button>
+        </div>
+      </div></div>
+    </div>
+
+    <div>
+      <div class="cap">٢ ب · الترحيب — التوصيل<small>Onboarding 2 of 3</small></div>
+      <div class="phone"><div class="scr" style="background:#FFFFFF;padding:16px 24px 28px">
+        <div style="display:flex;justify-content:flex-end;align-items:center;height:44px"><button class="btn btn-text">تخطَّ</button></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center">
+          <div class="hero"><div class="in"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"></path><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg></div><span class="acc"></span><span class="acc2"></span></div>
+          <h2 style="font-size:26px;font-weight:700;line-height:1.4">توصيل إلى جميع محافظات العراق</h2>
+          <p class="muted" style="font-size:16px;max-width:300px;line-height:1.7">اطلب من أي محافظة، وتظهر رسوم التوصيل حسب وجهتك قبل تأكيد الطلب. الدفع نقدًا عند الاستلام.</p>
+        </div>
+        <div class="dots"><i></i><i class="on"></i><i></i></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px">
+          <button class="btn btn-primary btn-block btn-lg">التالي</button>
+          <button class="btn btn-text btn-block">تخطَّ وتصفح المتجر</button>
+        </div>
+      </div></div>
+    </div>
+
+    <div>
+      <div class="cap">٢ ج · الترحيب — الصيانة<small>Onboarding 3 of 3 — الإجراءان المطلوبان</small></div>
+      <div class="phone"><div class="scr" style="background:#FFFFFF;padding:16px 24px 28px">
+        <div style="display:flex;justify-content:flex-end;align-items:center;height:44px"><button class="btn btn-text">تخطَّ</button></div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center">
+          <div class="hero"><div class="in"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div><span class="acc"></span><span class="acc2"></span></div>
+          <h2 style="font-size:26px;font-weight:700;line-height:1.4">خدمات صيانة داخل الورشة أو في موقع الزبون</h2>
+          <p class="muted" style="font-size:16px;max-width:300px;line-height:1.7">احجز موعدًا في أحد فرعينا أو اطلب فنيًا إلى موقعك. التوفر والتكلفة بعد مراجعة الإدارة.</p>
+        </div>
+        <div class="dots"><i></i><i></i><i class="on"></i></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px">
+          <button class="btn btn-primary btn-block btn-lg">ابدأ التسوق</button>
+          <button class="btn btn-outline btn-block btn-lg">تسجيل الدخول</button>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1760,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

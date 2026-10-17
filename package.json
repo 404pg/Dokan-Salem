@@ -1,0 +1,17 @@
+{
+  "name": "dokan-screen-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A browsable library for Dokan Saleem design exports",
+  "scripts": {
+    "start": "node server.js",
+    "admin:dev": "vite admin --config admin/vite.config.mjs --host 127.0.0.1",
+    "admin:build": "vite build admin --config admin/vite.config.mjs"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0"
+  }
+}

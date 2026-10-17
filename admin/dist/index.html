@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f2e6" />
+    <title>إدارة دكان سليم</title>
+    <script type="module" crossorigin src="/admin/assets/index-De2-Nstq.js"></script>
+    <link rel="stylesheet" crossorigin href="/admin/assets/index--Xw57Hd4.css">
+  </head>
+  <body>
+    <main id="app">
+      <section id="login-view" class="login-shell">
+        <form id="login-form" class="login-card">
+          <img src="./assets/dokan-logo.jpg" alt="دكان سليم" />
+          <h1>إدارة المتجر</h1>
+          <p>سجّل الدخول بحساب مدير المتجر.</p>
+          <label>البريد الإلكتروني<input name="email" type="email" autocomplete="username" required /></label>
+          <label>كلمة المرور<input name="password" type="password" autocomplete="current-password" required /></label>
+          <button class="primary" type="submit">تسجيل الدخول</button>
+          <button id="forgot-password" class="text-button" type="button">نسيت كلمة المرور؟</button>
+          <p id="login-error" class="message error" role="alert"></p>
+          <p class="hint">تحتاج اللوحة إلى خادم دكان سليم المحلي. أنشئ حساب المدير مرة واحدة عبر واجهة تهيئة الخادم، ثم استخدم بيانات دخوله هنا.</p>
+        </form>
+      </section>
+      <section id="admin-view" class="admin-shell" hidden>
+        <aside class="sidebar">
+          <div class="brand"><img src="./assets/dokan-logo.jpg" alt="" /><span>دكان سليم<small>لوحة الإدارة</small></span></div>
+          <nav id="navigation" aria-label="أقسام الإدارة"></nav>
+          <button id="change-password" class="quiet">تغيير كلمة المرور</button>
+          <button id="sign-out" class="quiet sign-out">تسجيل الخروج</button>
+        </aside>
+        <section class="workspace">
+          <header class="topbar">
+            <div><p class="eyebrow">إدارة المتجر</p><h1 id="page-title">الرئيسية</h1></div>
+            <span id="admin-email" class="admin-email"></span>
+          </header>
+          <div id="notice" role="status" aria-live="polite"></div>
+          <div id="page-content"></div>
+        </section>
+      </section>
+      <dialog id="editor">
+        <form id="editor-form" method="dialog">
+          <div class="dialog-heading"><h2 id="editor-title"></h2><button class="icon-button" type="button" data-close-editor aria-label="إغلاق">×</button></div>
+          <div id="editor-fields" class="editor-fields"></div>
+          <p id="editor-error" class="message error" role="alert"></p>
+          <div class="dialog-actions"><button class="quiet" type="button" data-close-editor>إلغاء</button><button class="primary" id="save-record" type="submit">حفظ</button></div>
+        </form>
+      </dialog>
+      <dialog id="password-dialog">
+        <form id="password-form" method="dialog">
+          <div class="dialog-heading"><h2>تغيير كلمة المرور</h2><button class="icon-button" type="button" data-close-password aria-label="إغلاق">×</button></div>
+          <div class="editor-fields">
+            <label>كلمة المرور الحالية<input name="current-password" type="password" autocomplete="current-password" required /></label>
+            <label>كلمة المرور الجديدة<input name="new-password" type="password" autocomplete="new-password" minlength="12" required /></label>
+            <label>تأكيد كلمة المرور الجديدة<input name="confirm-password" type="password" autocomplete="new-password" minlength="12" required /></label>
+          </div>
+          <p id="password-error" class="message error" role="alert"></p>
+          <div class="dialog-actions"><button class="quiet" type="button" data-close-password>إلغاء</button><button class="primary" type="submit">حفظ</button></div>
+        </form>
+      </dialog>
+    </main>
+  </body>
+</html>

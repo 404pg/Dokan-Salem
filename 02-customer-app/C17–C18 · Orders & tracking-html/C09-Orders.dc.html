@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>طلباتي وتتبع الطلب</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.li-r{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.li-r:last-child{border-bottom:0}
+.li-r .im{width:44px;height:44px;border-radius:8px;background:var(--ph);display:flex;align-items:center;justify-content:center;color:var(--charcoal);flex:0 0 auto}
+.li-r .im .ic{width:22px;height:22px;stroke-width:1.4}
+.li-r .tx{flex:1;min-width:0;font-size:14px;line-height:1.4}
+.li-r .tx small{display:block;color:var(--charcoal);font-size:12px}
+.sec-t{font-size:16px;font-weight:700}
+.tabs-m{display:flex;gap:8px;overflow:hidden;padding:12px 16px;background:#FFFFFF;border-bottom:1px solid var(--line)}
+.reason{background:var(--red-tint);border-radius:8px;padding:10px 12px;font-size:13px;color:#5C120D;line-height:1.6}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:1760px;height:1320px">
+  <div class="sheet-h"><h1>الشاشتان ١٧ و١٨ · طلباتي وتفاصيل الطلب</h1><p>الخط الزمني يعرض التقدم التشغيلي فقط — لا تتبع GPS مباشر.</p><span class="sample">بيانات تجريبية</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">١٧ · طلباتي<small>تبويبات حسب الحالة وبطاقات الطلبات</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><h2 style="padding-inline-start:12px">طلباتي</h2><button class="ib" aria-label="الإشعارات"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg><span class="dotn"></span></button></div>
+        <div class="tabs-m"><span class="chip on">الكل</span><span class="chip">بانتظار التأكيد</span><span class="chip">قيد التجهيز</span><span class="chip">قيد التوصيل</span><span class="chip">مكتمل</span><span class="chip">ملغي</span></div>
+        <div class="body g12">
+          <div class="ocard"><div class="top"><b class="ltr">DS-1042</b><span class="bd pend">بانتظار تأكيد المتجر</span></div><div class="kv"><span>١٤ أكتوبر ٢٠٢٦ · ٠٩:١٢ ص</span><span>7 قطع</span></div><div class="thumbs"><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"></path></svg></div><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg></div><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v5H9zM10 8v7h4V8"></path></svg></div></div><div class="kv" style="align-items:center"><b style="font-size:16px">119,000 د.ع</b><button class="btn btn-outline btn-sm">عرض التفاصيل</button></div></div>
+          <div class="ocard"><div class="top"><b class="ltr">DS-1038</b><span class="bd ship">خرج للتوصيل</span></div><div class="kv"><span>١٢ أكتوبر ٢٠٢٦ · ٠٤:٣٠ م</span><span>2 قطعتان</span></div><div class="thumbs"><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"></rect></svg></div><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle></svg></div></div><div class="kv" style="align-items:center"><b style="font-size:16px">136,000 د.ع</b><button class="btn btn-outline btn-sm">عرض التفاصيل</button></div></div>
+          <div class="ocard"><div class="top"><b class="ltr">DS-1031</b><span class="bd done">تم التسليم</span></div><div class="kv"><span>٥ أكتوبر ٢٠٢٦ · ١١:٠٥ ص</span><span>1 قطعة</span></div><div class="thumbs"><div><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 17a8 8 0 0 1 16 0v2H4z"></path></svg></div></div><div class="kv" style="align-items:center"><b style="font-size:16px">125,000 د.ع</b><button class="btn btn-outline btn-sm">عرض التفاصيل</button></div></div>
+          <div class="ocard"><div class="top"><b class="ltr">DS-1019</b><span class="bd fail">تعذر التسليم</span></div><div class="kv"><span>٢٨ سبتمبر ٢٠٢٦ · ٠٢:٤٠ م</span><span>3 قطع</span></div><div class="kv" style="align-items:center"><b style="font-size:16px">41,500 د.ع</b><button class="btn btn-outline btn-sm">عرض التفاصيل</button></div></div>
+        </div>
+        <div class="nav">
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg>الرئيسية</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>الأقسام</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>الصيانة</button>
+          <button class="ni on"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg>طلباتي</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>حسابي</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٨ أ · تفاصيل طلب خرج للتوصيل<small>خط زمني بالتوقيت + دعم، دون إلغاء</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>تفاصيل الطلب</h2></div>
+        <div class="body g12">
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv" style="align-items:center"><b class="ltr" style="font-size:17px">DS-1038</b><span class="bd ship">خرج للتوصيل</span></div><div class="sm-t muted">١٢ أكتوبر ٢٠٢٦ · ٠٤:٣٠ م</div></div>
+          <div class="card flat"><div class="sec-t" style="margin-bottom:12px">حالة الطلب</div>
+            <div class="tl">
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">تم استلام الطلب</div><div class="ts">١٢ أكتوبر · ٠٤:٣٠ م</div></div></div>
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">مؤكد من المتجر</div><div class="ts">١٢ أكتوبر · ٠٥:١٠ م</div></div></div>
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">قيد التجهيز</div><div class="ts">١٣ أكتوبر · ١٠:٢٠ ص</div></div></div>
+              <div class="ti cur"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 8v5"></path></svg></div><div><div class="tt">خرج للتوصيل</div><div class="ts">١٤ أكتوبر · ٠٨:٤٥ ص</div></div></div>
+              <div class="ti wait"><div class="dot"></div><div><div class="tt">تم التسليم</div></div></div>
+            </div>
+            <div class="alert info" style="margin-top:12px;font-size:13px"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>نحدّث الحالة عند كل مرحلة. لا يتوفر تتبع مباشر لموقع المندوب.</span></div>
+          </div>
+          <div class="card flat" style="padding:4px 14px"><div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"></rect></svg></div><div class="tx">بطارية يواسا 12 فولت 7 أمبير<small>1 × 38,000 د.ع</small></div><b class="sm-t">38,000</b></div><div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle></svg></div><div class="tx">إطار أمامي 90/90-18<small>1 × 95,000 د.ع</small></div><b class="sm-t">95,000</b></div></div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv"><span>المجموع الفرعي</span><span>133,000 د.ع</span></div><div class="kv"><span>رسوم التوصيل — البصرة</span><span>3,000 د.ع</span></div><div class="kv tot"><span>الإجمالي عند الاستلام</span><span>136,000 د.ع</span></div></div>
+          <div class="card flat" style="font-size:14px;display:flex;flex-direction:column;gap:6px"><div class="kv"><span>طريقة الدفع</span><span>الدفع نقدًا عند الاستلام</span></div><div class="kv"><span>العنوان</span><span style="text-align:end">البصرة — [المنطقة]، [التفاصيل]</span></div></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-outline btn-lg btn-block"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>تواصل مع الدعم</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٨ ب · تفاصيل طلب تعذر تسليمه<small>سبب مسجّل من الإدارة + خطوة تالية</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>تفاصيل الطلب</h2></div>
+        <div class="body g12">
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv" style="align-items:center"><b class="ltr" style="font-size:17px">DS-1019</b><span class="bd fail">تعذر التسليم</span></div><div class="sm-t muted">٢٨ سبتمبر ٢٠٢٦ · ٠٢:٤٠ م</div></div>
+          <div class="card flat"><div class="sec-t" style="margin-bottom:12px">حالة الطلب</div>
+            <div class="tl">
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">تم استلام الطلب</div><div class="ts">٢٨ سبتمبر · ٠٢:٤٠ م</div></div></div>
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">مؤكد من المتجر</div><div class="ts">٢٨ سبتمبر · ٠٣:١٥ م</div></div></div>
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">قيد التجهيز</div><div class="ts">٢٩ سبتمبر · ٠٩:٠٠ ص</div></div></div>
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">خرج للتوصيل</div><div class="ts">٢٩ سبتمبر · ١١:٣٠ ص</div></div></div>
+              <div class="ti bad"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></div><div><div class="tt" style="color:var(--red)">تعذر التسليم</div><div class="ts">٢٩ سبتمبر · ٠٣:٢٠ م</div></div></div>
+            </div>
+            <div class="reason" style="margin-top:12px"><b>السبب المسجّل:</b> لم يتم الرد على اتصال المندوب (سبب تجريبي).</div>
+          </div>
+          <div class="alert warn"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"></path><path d="M12 10v5M12 18h.01"></path></svg><span>سيتواصل معك المتجر لترتيب إعادة التسليم. يمكنك أيضًا التواصل مع الدعم الآن.</span></div>
+          <div class="card flat" style="padding:4px 14px"><div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"></path></svg></div><div class="tx">زيت ناقل الحركة<small>2 × 18,000 د.ع</small></div><b class="sm-t">36,000</b></div><div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v5H9zM10 8v7h4V8"></path></svg></div><div class="tx">شمعة إشعال<small>1 × 4,500 د.ع</small></div><b class="sm-t">4,500</b></div></div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv"><span>المجموع الفرعي</span><span>40,500 د.ع</span></div><div class="kv"><span>رسوم التوصيل — بغداد</span><span>5,000 د.ع</span></div><div class="kv"><span>الإجمالي</span><span>45,500 د.ع</span></div><span class="help">لم تُحصَّل أي مبالغ لأن الطلب لم يُسلَّم.</span></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">تواصل مع الدعم</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٨ ج · إلغاء طلب بانتظار التأكيد<small>الإلغاء متاح قبل التأكيد فقط — حوار تأكيد</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>تفاصيل الطلب</h2></div>
+        <div class="body g12">
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv" style="align-items:center"><b class="ltr" style="font-size:17px">DS-1042</b><span class="bd pend">بانتظار تأكيد المتجر</span></div><div class="sm-t muted">١٤ أكتوبر ٢٠٢٦ · ٠٩:١٢ ص</div></div>
+          <div class="card flat"><div class="sec-t" style="margin-bottom:12px">حالة الطلب</div>
+            <div class="tl">
+              <div class="ti done"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div><div class="tt">تم استلام الطلب</div><div class="ts">١٤ أكتوبر · ٠٩:١٢ ص</div></div></div>
+              <div class="ti cur"><div class="dot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 8v5"></path></svg></div><div><div class="tt">بانتظار تأكيد المتجر</div><div class="ts">سنتواصل معك عند المراجعة</div></div></div>
+              <div class="ti wait"><div class="dot"></div><div><div class="tt">قيد التجهيز</div></div></div>
+              <div class="ti wait"><div class="dot"></div><div><div class="tt">خرج للتوصيل</div></div></div>
+              <div class="ti wait"><div class="dot"></div><div><div class="tt">تم التسليم</div></div></div>
+            </div>
+          </div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="kv"><span>المجموع الفرعي</span><span>114,000 د.ع</span></div><div class="kv"><span>رسوم التوصيل — بغداد</span><span>5,000 د.ع</span></div><div class="kv tot"><span>الإجمالي عند الاستلام</span><span>119,000 د.ع</span></div></div>
+          <div class="card flat" style="font-size:14px;display:flex;flex-direction:column;gap:6px"><div class="kv"><span>طريقة الدفع</span><span>الدفع نقدًا عند الاستلام</span></div><div class="kv"><span>العنوان</span><span style="text-align:end">بغداد — الدورة، [التفاصيل]</span></div></div>
+        </div>
+        <div class="stickybar" style="flex-direction:column;align-items:stretch;gap:8px"><button class="btn btn-outline btn-lg btn-block">تواصل مع الدعم</button><button class="btn btn-danger-o btn-block">إلغاء الطلب</button></div>
+        <div class="scrim"></div>
+        <div class="dlg">
+          <h3>إلغاء هذا الطلب؟</h3>
+          <p>سيُلغى الطلب <span class="ltr">DS-1042</span> ولن يجهّزه المتجر. يمكنك طلب المنتجات مرة أخرى في أي وقت.</p>
+          <div class="field"><label class="lbl">سبب الإلغاء<span class="opt">اختياري</span></label><button class="input sel sm"><span class="muted">اختر سببًا</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+          <div class="acts"><button class="btn btn-outline">تراجع</button><button class="btn btn-danger">نعم، ألغِ الطلب</button></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1760,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

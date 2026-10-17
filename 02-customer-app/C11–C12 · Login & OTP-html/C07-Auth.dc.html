@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>تسجيل الدخول والتحقق</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.lg-h{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.ph-in{direction:ltr;flex:1;text-align:start;font-size:17px;font-weight:500;letter-spacing:.5px}
+.ph-in.ph{color:#6B6E78;font-weight:400}
+.lnk{color:var(--orange-ink);font-weight:600;text-decoration:underline}
+.otp div.dis{background:#ECE8EE;border-color:#C9C3CE}
+.big-i{width:88px;height:88px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:3050px;height:1080px">
+  <div class="sheet-h"><h1>الشاشتان ١١ و١٢ · الدخول برقم الهاتف والتحقق</h1><p>لا يُعرض «تم إرسال الرمز» إلا بعد تأكيد خدمة المصادقة، ولا توجد كلمة مرور.</p><span class="sample">رقم الهاتف في الأمثلة وهمي</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">١١ أ · الدخول<small>الحالة الافتراضية</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="إغلاق"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:112px;height:112px;border:1px solid var(--line)"><h1 style="font-size:28px;font-weight:700;line-height:1.35;margin-top:8px">أهلًا بك في دكان سليم</h1><p class="muted" style="font-size:16px;line-height:1.7">سجّل دخولك لتتمكن من إتمام الطلبات ومتابعتها.</p></div>
+          <div class="field"><label class="lbl">رقم الهاتف<span class="req">*</span></label>
+            <div class="input"><span class="pre"><span class="ltr">+964</span><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></span><span class="ph-in ph">7XX XXX XXXX</span></div>
+            <span class="help">أدخل رقمك العراقي بدون الصفر الأول</span></div>
+          <button class="btn btn-primary btn-block btn-lg btn-disabled" disabled="">متابعة</button>
+          <p class="muted" style="font-size:13px;line-height:1.8;text-align:center">بالمتابعة فإنك توافق على <span class="lnk">شروط الاستخدام</span> و<span class="lnk">سياسة الخصوصية</span>.</p>
+          <button class="btn btn-text btn-block" style="margin-top:auto">متابعة التصفح كزائر</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١١ ب · رقم غير صحيح<small>رسالة خطأ ودودة</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="إغلاق"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:112px;height:112px;border:1px solid var(--line)"><h1 style="font-size:28px;font-weight:700;line-height:1.35;margin-top:8px">أهلًا بك في دكان سليم</h1><p class="muted" style="font-size:16px;line-height:1.7">سجّل دخولك لتتمكن من إتمام الطلبات ومتابعتها.</p></div>
+          <div class="field"><label class="lbl">رقم الهاتف<span class="req">*</span></label>
+            <div class="input bad"><span class="pre"><span class="ltr">+964</span><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></span><span class="ph-in">7701 23</span></div>
+            <span class="err"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6M12 16.5h.01"></path></svg>الرقم ناقص. أدخل 10 أرقام تبدأ بـ 7، مثل 7701234567</span></div>
+          <button class="btn btn-primary btn-block btn-lg">متابعة</button>
+          <p class="muted" style="font-size:13px;line-height:1.8;text-align:center">بالمتابعة فإنك توافق على <span class="lnk">شروط الاستخدام</span> و<span class="lnk">سياسة الخصوصية</span>.</p>
+          <button class="btn btn-text btn-block" style="margin-top:auto">متابعة التصفح كزائر</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٢ أ · بانتظار تأكيد الخدمة<small>لا نقول «أُرسل» قبل التأكيد</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><h1 style="font-size:26px;font-weight:700;line-height:1.35">نطلب رمز التحقق</h1><p class="muted" style="font-size:16px;line-height:1.7">نتواصل مع خدمة التحقق من أجل الرقم <span class="ltr sb" style="color:var(--onyx)">+964 770 000 0000</span></p></div>
+          <div class="otp"><div class="dis"></div><div class="dis"></div><div class="dis"></div><div class="dis"></div><div class="dis"></div><div class="dis"></div></div>
+          <div class="alert info"><span class="spin" style="width:16px;height:16px;border-width:2px;margin-top:3px" aria-hidden="true"></span><span>جارٍ انتظار تأكيد الخدمة. سنخبرك هنا حين يُرسل الرمز فعليًا.</span></div>
+          <button class="btn btn-primary btn-block btn-lg"><span class="spin" aria-hidden="true"></span>جارٍ الطلب…</button>
+          <button class="btn btn-text btn-block">تغيير رقم الهاتف</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٢ ب · الرمز أُرسل<small>إدخال الأرقام + مهلة إعادة الإرسال</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><h1 style="font-size:26px;font-weight:700;line-height:1.35">أدخل رمز التحقق</h1><p class="muted" style="font-size:16px;line-height:1.7">أرسلنا رمزًا من 6 أرقام إلى <span class="ltr sb" style="color:var(--onyx)">+964 770 000 0000</span></p></div>
+          <div class="otp"><div>4</div><div>7</div><div>2</div><div class="f"></div><div></div><div></div></div>
+          <div class="row-s" style="justify-content:center;color:var(--charcoal);font-size:14px"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>يمكنك طلب رمز جديد بعد <b class="ltr" style="color:var(--onyx)">00:42</b></div>
+          <button class="btn btn-primary btn-block btn-lg btn-disabled" disabled="">تأكيد</button>
+          <button class="btn btn-text btn-block">تغيير رقم الهاتف</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٢ ج · رمز غير صحيح<small>خطأ + عدد المحاولات المتبقية</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><h1 style="font-size:26px;font-weight:700;line-height:1.35">أدخل رمز التحقق</h1><p class="muted" style="font-size:16px;line-height:1.7">أرسلنا رمزًا من 6 أرقام إلى <span class="ltr sb" style="color:var(--onyx)">+964 770 000 0000</span></p></div>
+          <div class="otp bad"><div>4</div><div>7</div><div>2</div><div>9</div><div>1</div><div>0</div></div>
+          <div class="err" style="justify-content:center"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6M12 16.5h.01"></path></svg>الرمز غير صحيح. تبقّت لك محاولتان.</div>
+          <button class="btn btn-primary btn-block btn-lg">تأكيد</button>
+          <button class="btn btn-text btn-block">إعادة إرسال الرمز</button>
+          <button class="btn btn-text btn-block">تغيير رقم الهاتف</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٢ د · رمز منتهي الصلاحية<small>اقتراح إرسال رمز جديد</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+        <div class="body" style="gap:24px;padding:24px">
+          <div class="lg-h"><h1 style="font-size:26px;font-weight:700;line-height:1.35">انتهت صلاحية الرمز</h1><p class="muted" style="font-size:16px;line-height:1.7">الرمز الذي أدخلته لم يعد صالحًا. اطلب رمزًا جديدًا للمتابعة.</p></div>
+          <div class="otp"><div class="dis">4</div><div class="dis">7</div><div class="dis">2</div><div class="dis">9</div><div class="dis">1</div><div class="dis">0</div></div>
+          <div class="alert warn"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span>مدة صلاحية الرمز انتهت. سيصلك رمز جديد بعد تأكيد الخدمة.</span></div>
+          <button class="btn btn-primary btn-block btn-lg">طلب رمز جديد</button>
+          <button class="btn btn-text btn-block">تغيير رقم الهاتف</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٢ هـ · تم التحقق<small>نجاح ثم العودة إلى السلة المحفوظة</small></div>
+      <div class="phone">
+        <div class="scr" style="justify-content:center;align-items:center;padding:24px;gap:16px;text-align:center">
+          <div class="big-i" style="background:var(--green-tint);border:2px solid var(--green);color:var(--green-ink)"><svg class="ic" style="width:44px;height:44px;stroke-width:2.2" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div>
+          <h1 style="font-size:26px;font-weight:700">تم التحقق بنجاح</h1>
+          <p class="muted" style="font-size:16px;line-height:1.7;max-width:280px">أهلًا بك في دكان سليم. سنعيدك الآن إلى سلتك لمتابعة الطلب.</p>
+          <div class="row-s muted sm-t" style="margin-top:8px"><span class="spin" style="width:16px;height:16px;border-width:2px" aria-hidden="true"></span>جارٍ المتابعة…</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3050,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

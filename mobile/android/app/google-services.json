@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737758073555",
+    "project_id": "dokan-salem",
+    "storage_bucket": "dokan-salem.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737758073555:android:9da294597621c2964f3a26",
+        "android_client_info": {
+          "package_name": "com.dokansaleem.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM0g0_BmHwpcX8QWiG8JYORzcQkobIVdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>دخول الإدارة</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.rel{position:relative}
+.tsmall{font-size:13px;color:var(--charcoal)}
+.hl{display:flex;gap:12px;align-items:center}
+.cardrow{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.cardrow:last-child{border-bottom:0}
+.cardrow .grow small{display:block;color:var(--charcoal);font-size:12px}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.nm{font-variant-numeric:tabular-nums}
+.sample-n{font-size:12px;color:var(--charcoal);background:var(--neutral-tint);border-radius:6px;padding:2px 8px}
+.rowb{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.col{display:flex;flex-direction:column;gap:12px}
+.col8{display:flex;flex-direction:column;gap:8px}
+.hr{height:1px;background:var(--line);border:0;margin:4px 0}
+.chipsm{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:13px;background:var(--neutral-tint);font-size:13px;font-weight:600}
+</style>
+</helmet>
+<div class="ar rel" dir="rtl" style="width:1440px;height:900px;background:var(--lav)"><div style="display:flex;gap:40px;justify-content:center;align-items:flex-start;padding:60px 40px;height:100%"><div class="col8" style="width:400px"><div class="note-s b">الحالة الافتراضية</div><div class="panel"><div class="panel-b col" style="gap:16px;padding:28px"><div style="text-align:center"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:96px;height:96px;object-fit:contain;border-radius:12px;background:var(--logo-bg)"><h1 style="font-size:22px;margin-top:10px">تسجيل دخول الإدارة</h1><p class="muted" style="font-size:14px">للموظفين المصرّح لهم فقط</p></div><div class="field"><label class="lbl">البريد الإلكتروني</label><div class="input  ltr" style="text-align:start">admin@example.com</div></div><div class="field"><label class="lbl">كلمة المرور</label><div class="input  rowb"><span class="ltr">••••••••••</span><svg class="ic " aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></div></div><button class="btn btn-primary btn-lg btn-block">تسجيل الدخول</button><a class="sm-t" style="text-align:center;color:var(--charcoal);text-decoration:underline">نسيت كلمة المرور؟ تواصل مع مدير النظام</a></div></div></div><div class="col8" style="width:400px"><div class="note-s b">بيانات دخول غير صحيحة</div><div class="panel"><div class="panel-b col" style="gap:16px;padding:28px"><div style="text-align:center"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:96px;height:96px;object-fit:contain;border-radius:12px;background:var(--logo-bg)"><h1 style="font-size:22px;margin-top:10px">تسجيل دخول الإدارة</h1><p class="muted" style="font-size:14px">للموظفين المصرّح لهم فقط</p></div><div class="alert bad" role="alert"><svg class="ic " aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"></path><path d="M12 10v5M12 18h.01"></path></svg><span>البريد الإلكتروني أو كلمة المرور غير صحيحة. تحقق من البيانات وحاول مرة أخرى.</span></div><div class="field"><label class="lbl">البريد الإلكتروني</label><div class="input bad ltr" style="text-align:start">admin@example.com</div></div><div class="field"><label class="lbl">كلمة المرور</label><div class="input bad rowb"><span class="ltr">••••••••••</span><svg class="ic " aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></div></div><button class="btn btn-primary btn-lg btn-block">تسجيل الدخول</button><a class="sm-t" style="text-align:center;color:var(--charcoal);text-decoration:underline">نسيت كلمة المرور؟ تواصل مع مدير النظام</a></div></div></div><div class="col8" style="width:400px"><div class="note-s b">تعليق مؤقت للمحاولات</div><div class="panel"><div class="panel-b col" style="gap:16px;padding:28px"><div style="text-align:center"><img class="logo" src="./assets/9255753d9f8a46c39f3802bd880e9ee0.png" alt="شعار دكان سليم" style="width:96px;height:96px;object-fit:contain;border-radius:12px;background:var(--logo-bg)"><h1 style="font-size:22px;margin-top:10px">تسجيل دخول الإدارة</h1><p class="muted" style="font-size:14px">للموظفين المصرّح لهم فقط</p></div><div class="alert warn" role="alert"><svg class="ic " aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>تم إيقاف المحاولات مؤقتًا بعد عدة محاولات فاشلة. حاول بعد ١٥ دقيقة أو تواصل مع مدير النظام.</span></div><div class="field"><label class="lbl">البريد الإلكتروني</label><div class="input  ltr" style="text-align:start">admin@example.com</div></div><div class="field"><label class="lbl">كلمة المرور</label><div class="input  rowb"><span class="ltr">••••••••••</span><svg class="ic " aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></div></div><button class="btn btn-primary btn-lg btn-block btn-disabled">تسجيل الدخول</button><a class="sm-t" style="text-align:center;color:var(--charcoal);text-decoration:underline">نسيت كلمة المرور؟ تواصل مع مدير النظام</a></div></div></div></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

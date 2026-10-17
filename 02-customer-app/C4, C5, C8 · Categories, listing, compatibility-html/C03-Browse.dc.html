@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>الأقسام وقائمة المنتجات</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.pc.g .pimg{aspect-ratio:3/2}
+.pc.g .pimg .ic{width:46px;height:46px}
+.sub{display:flex;flex-direction:column;background:#FFFFFF;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.sub .lrow{min-height:48px;padding:10px 14px;font-size:15px}
+.opt-l{display:flex;align-items:center;gap:12px;height:48px;border-bottom:1px solid var(--line);font-size:15px}
+.opt-l:last-child{border-bottom:0}
+.opt-l span{flex:1}
+.stp-m{display:flex;gap:12px;align-items:flex-start}
+.stp-m .n{width:28px;height:28px;border-radius:50%;background:#FFFFFF;border:2px solid var(--line-strong);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:0 0 auto}
+.stp-m.done .n{background:var(--green);border-color:var(--green);color:#FFFFFF}
+.stp-m.cur .n{background:var(--orange);border-color:var(--orange);color:var(--onyx)}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:1760px;height:1080px">
+  <div class="sheet-h"><h1>الشاشات ٤ و٥ و٨ · الأقسام، القائمة، التوافق</h1><p>الأقسام تأتي من كتالوج المتجر، والفلاتر لا تظهر إلا إذا وُجدت بيانات لها.</p><span class="sample">بيانات تجريبية</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">٤ · كل الأقسام<small>شبكة عمودين + أقسام فرعية اختيارية</small></div>
+      <div class="phone">
+        <div class="appbar"><h2 style="padding-inline-start:12px">الأقسام</h2><button class="ib" aria-label="بحث"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></button><button class="ib" aria-label="السلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"></path></svg><span class="cnt">2</span></button></div>
+        <div class="body g12">
+          <div class="cgrid c2">
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"></path></svg></div><div>قطع المحرك<small>٣ أقسام فرعية</small></div></div>
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"></path><path d="M6 14h12"></path></svg></div><div>الزيوت والسوائل<small>٢ قسمان فرعيان</small></div></div>
+            <div class="ct big" style="border:2px solid var(--onyx)"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--orange);color:var(--onyx);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="6.5" r=".8"></circle><circle cx="17" cy="14.5" r=".8"></circle><circle cx="7" cy="14.5" r=".8"></circle></svg></div><div>الفرامل<small>٣ أقسام فرعية</small></div></div>
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.4"></circle></svg></div><div>الإطارات والعجلات<small>٢ قسمان فرعيان</small></div></div>
+          </div>
+          <div class="sub">
+            <div class="lrow" style="background:var(--lav);font-weight:700">أقسام «الفرامل» الفرعية<span class="spacer"></span><button class="btn btn-text btn-sm">عرض الكل</button></div>
+            <div class="lrow"><div class="lt">أقراص الفرامل</div><svg class="ic nx" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></div>
+            <div class="lrow"><div class="lt">تيل الفرامل</div><svg class="ic nx" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></div>
+            <div class="lrow"><div class="lt">سوائل وخراطيم الفرامل</div><svg class="ic nx" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></div>
+          </div>
+          <div class="cgrid c2">
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M7 7V4h3v3M14 7V4h3v3M8 13.5h4M10 11.5v4M15 13.5h2"></path></svg></div><div>البطاريات والكهربائيات<small>٣ أقسام فرعية</small></div></div>
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="8" width="9" height="8" rx="4"></rect><rect x="13" y="8" width="9" height="8" rx="4"></rect><path d="M8 12h8"></path></svg></div><div>السلاسل والتروس<small>قسمان فرعيان</small></div></div>
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 17a8 8 0 0 1 16 0v2H4z"></path><path d="M4 15h9l3-3h4"></path></svg></div><div>الخوذ ومعدات الحماية<small>٣ أقسام فرعية</small></div></div>
+            <div class="ct big"><div class="ci" style="width:46px;height:46px;border-radius:12px;background:var(--lav);display:flex;align-items:center;justify-content:center"><svg class="ic lg" aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="8" rx="6" ry="5"></ellipse><path d="M12 13v8M9 21h6"></path></svg></div><div>الكماليات والإكسسوارات<small>٤ أقسام فرعية</small></div></div>
+          </div>
+        </div>
+        <div class="nav">
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg>الرئيسية</button>
+          <button class="ni on"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>الأقسام</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>الصيانة</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg>طلباتي</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>حسابي</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٥ · قائمة منتجات القسم<small>بحث داخل القسم، ترتيب، فلاتر، «عرض المزيد»</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>الفرامل</h2><button class="ib" aria-label="السلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"></path></svg><span class="cnt">2</span></button></div>
+        <div class="body g12">
+          <div class="kv" style="align-items:center"><span style="font-size:13px">تيل وأقراص وسوائل فرامل للدراجات النارية</span><b class="sm-t" style="white-space:nowrap">24 منتجًا</b></div>
+          <div style="display:flex;gap:8px">
+            <div class="search" style="flex:1;height:44px"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><span style="font-size:14px">ابحث في الفرامل</span></div>
+            <button class="ib fill" aria-label="الترتيب" style="height:44px"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4"></path></svg></button>
+            <button class="ib fill" aria-label="الفلاتر" style="height:44px"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg><span class="cnt">2</span></button>
+          </div>
+          <div class="pgrid">
+            <div class="pc g"><div class="pimg"><button class="fav" aria-label="إضافة إلى المفضلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg></button><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="6.5" r=".8"></circle><circle cx="17" cy="14.5" r=".8"></circle><circle cx="7" cy="14.5" r=".8"></circle></svg></div><div class="pinfo"><div class="pb">Brembo</div><div class="pn">تيل فرامل أمامي عالي الاحتكاك</div><div class="pr"><b>18,000</b><em>د.ع</em></div><span class="stk in">متوفر</span></div></div>
+            <div class="pc g"><div class="pimg"><button class="fav" aria-label="إضافة إلى المفضلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg></button><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="6.5" r=".8"></circle><circle cx="17" cy="14.5" r=".8"></circle><circle cx="7" cy="14.5" r=".8"></circle></svg></div><div class="pinfo"><div class="pb">Brembo</div><div class="pn">أقراص فرامل أمامية عالية التحمل</div><div class="pr"><b>35,000</b><em>د.ع</em></div><span class="stk low">كمية محدودة</span></div></div>
+            <div class="pc g"><div class="pimg"><button class="fav on" aria-label="في المفضلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg></button><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="6.5" r=".8"></circle><circle cx="17" cy="14.5" r=".8"></circle><circle cx="7" cy="14.5" r=".8"></circle></svg></div><div class="pinfo"><div class="pb">EBC</div><div class="pn">تيل فرامل خلفي</div><div class="pr"><b>14,500</b><em>د.ع</em></div><span class="stk in">متوفر</span></div></div>
+            <div class="pc g"><div class="pimg"><span class="dsc">-10%</span><button class="fav" aria-label="إضافة إلى المفضلة"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"></path></svg></button><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"></path><path d="M6 14h12"></path></svg></div><div class="pinfo"><div class="pb">Motul</div><div class="pn">سائل فرامل DOT 4</div><div class="pr"><b class="sale">5,400</b><em>د.ع</em><s>6,000</s></div><span class="stk in">متوفر</span></div></div>
+          </div>
+          <button class="btn btn-outline btn-block">عرض المزيد</button>
+        </div>
+        <div class="nav">
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg>الرئيسية</button>
+          <button class="ni on"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>الأقسام</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>الصيانة</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg>طلباتي</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>حسابي</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٥ · ورقة الفلاتر<small>فلاتر القسم المتاحة فقط</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>الفرامل</h2></div>
+        <div class="body g12">
+          <div class="pgrid">
+            <div class="pc g"><div class="pimg"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg></div><div class="pinfo"><div class="pn">تيل فرامل أمامي</div></div></div>
+            <div class="pc g"><div class="pimg"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg></div><div class="pinfo"><div class="pn">أقراص فرامل</div></div></div>
+          </div>
+        </div>
+        <div class="scrim"></div>
+        <div class="sheetb" style="gap:14px;max-height:690px">
+          <div class="grab"></div>
+          <div class="sec-h"><h3 style="font-size:18px;font-weight:700">الفلاتر</h3><button>مسح الكل</button></div>
+          <div class="field"><span class="lbl">التوفر</span><div class="chips"><span class="chip">الكل</span><span class="chip on">متوفر فقط</span></div></div>
+          <div class="field"><span class="lbl">الفرع</span><div class="chips"><span class="chip">فرع الدورة</span><span class="chip">فرع حي القاهرة</span></div></div>
+          <div class="field"><span class="lbl">العلامة التجارية</span><div class="chips"><span class="chip on">Brembo<svg class="ic x" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></span><span class="chip">EBC</span><span class="chip">Motul</span></div></div>
+          <div class="field"><span class="lbl">السعر (د.ع)</span>
+            <div style="display:flex;gap:10px"><input class="input sm" value="5,000" aria-label="الحد الأدنى للسعر"><input class="input sm" value="40,000" aria-label="الحد الأعلى للسعر"></div>
+            <div style="height:6px;background:#D5CFD9;border-radius:3px;position:relative;margin:10px 4px 4px"><div style="position:absolute;inset-block:0;inset-inline:12% 28%;background:var(--orange);border-radius:3px"></div></div>
+          </div>
+          <div class="field"><span class="lbl">توافق الدراجة</span><button class="input sel"><span class="row-s"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="5.5" cy="16.5" r="3.5"></circle><circle cx="18.5" cy="16.5" r="3.5"></circle><path d="M9 16.5h5l-3-7h4l3 7M8 9.5h3"></path></svg>اختر دراجتك</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></button></div>
+          <span class="help">لا تظهر هنا فلاتر لا تتوفر بياناتها في هذا القسم.</span>
+          <div style="display:flex;gap:10px"><button class="btn btn-outline" style="flex:0 0 auto">إلغاء</button><button class="btn btn-primary" style="flex:1">عرض 9 منتجات</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٨ · اختيار الدراجة (التوافق)<small>اختياري — لا يُفترض وجود بيانات توافق لكل منتج</small></div>
+      <div class="phone">
+        <div class="appbar"><button class="ib" aria-label="إغلاق"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button><h2>اختر دراجتك</h2><button class="btn btn-text btn-sm">إعادة تعيين</button></div>
+        <div class="body g16">
+          <div class="steps"><i class="dn"></i><i class="dn"></i><i class="on"></i><i></i></div>
+          <div class="stp-m done"><div class="n"><svg class="ic" style="width:14px;height:14px;stroke-width:2.8" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div class="grow"><div class="sm-t muted">الشركة المصنعة</div><b>Honda</b></div><button class="btn btn-text btn-sm">تغيير</button></div>
+          <div class="stp-m done"><div class="n"><svg class="ic" style="width:14px;height:14px;stroke-width:2.8" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div><div class="grow"><div class="sm-t muted">نوع الدراجة</div><b>CG 125</b></div><button class="btn btn-text btn-sm">تغيير</button></div>
+          <div class="stp-m cur"><div class="n">3</div><div class="grow" style="display:flex;flex-direction:column;gap:8px"><b>الموديل</b>
+            <div class="sub"><div class="opt-l" style="padding:0 14px"><div class="chk rad"><i class="on"></i></div><span class="sb">CG 125 Titan</span></div><div class="opt-l" style="padding:0 14px"><div class="chk rad"><i></i></div><span>CG 125 Fan</span></div><div class="opt-l" style="padding:0 14px"><div class="chk rad"><i></i></div><span>CG 125 الأساسي</span></div></div></div></div>
+          <div class="stp-m"><div class="n">4</div><div class="grow" style="display:flex;flex-direction:column;gap:8px"><b>سنة الصنع <span class="muted sb sm-t">(إن وُجدت)</span></b><div class="chips"><span class="chip">2016</span><span class="chip">2017</span><span class="chip">2018</span><span class="chip">+</span></div></div></div>
+          <div class="alert info"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>نعرض القطع المتوافقة عند توفر بيانات التوافق. المنتجات بلا بيانات تظهر مع «يرجى التأكد من التوافق قبل الطلب».</span></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg grow">عرض القطع المتوافقة</button></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1760,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

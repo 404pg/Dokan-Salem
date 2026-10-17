@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>الصيانة</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.opt-c{border:1.5px solid var(--line);border-radius:12px;background:#fff;padding:14px;display:flex;flex-direction:column;gap:8px}
+.opt-c.on{border-color:var(--orange);background:#FFF7F0}
+.opt-c .h{display:flex;gap:10px;align-items:center;font-weight:700;font-size:16px}
+.opt-c .ico{width:40px;height:40px;border-radius:10px;background:var(--lav);display:flex;align-items:center;justify-content:center;color:var(--onyx)}
+.opt-c p{margin:0;font-size:13px;line-height:1.6;color:var(--charcoal)}
+.step-t{font-size:16px;font-weight:700}
+.photo-slot{width:72px;height:72px;border:1.5px dashed var(--charcoal);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--charcoal);flex:0 0 auto}
+.ta{min-height:84px;align-items:flex-start;padding-top:10px}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:1760px;height:1320px">
+  <div class="sheet-h"><h1>الشاشات ١٩–٢١ · الصيانة</h1><p>نوعان من الخدمة: في الورشة أو في موقع العميل. الطلب يبدأ بحالة «بانتظار المراجعة» ولا يُعد حجزًا مؤكدًا.</p><span class="sample">بيانات تجريبية</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">١٩ · الصيانة<small>اختيار نوع الخدمة</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><h2 style="padding-inline-start:12px">الصيانة</h2><button class="ib" aria-label="الإشعارات"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg></button></div>
+        <div class="body g16">
+          <div class="maint-b"><b style="font-size:18px">صيانة دراجتك على أيدي مختصين</b><span style="font-size:13px;line-height:1.6">اطلب صيانة في الورشة أو في موقعك. نراجع الطلب ونتواصل معك لتأكيد الموعد.</span></div>
+          <div class="opt-c"><div class="h"><span class="ico"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12z"></path><path d="M9 21v-6h6v6"></path></svg></span>صيانة في الورشة</div><p>تأتي بدراجتك إلى أحد فرعينا: فرع الدورة أو فرع حي القاهرة.</p><button class="btn btn-primary btn-block">اطلب في الورشة</button></div>
+          <div class="opt-c"><div class="h"><span class="ico"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>صيانة في موقعك</div><p>يزورك الفني في موقعك داخل بغداد. التغطية والرسوم تحددها الإدارة وتُؤكَّد بعد المراجعة.</p><button class="btn btn-dark btn-block">اطلب في موقعي</button></div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px"><div class="sec-h"><b>طلباتي السابقة</b><button class="btn btn-text btn-sm">عرض الكل</button></div><div class="kv" style="align-items:center"><span class="ltr">MR-2007</span><span class="bd prog">قيد المراجعة</span></div></div>
+          <div class="alert info"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>سعر الصيانة يُحدَّد بعد فحص الدراجة. لا دفع إلكتروني — الدفع عند الاستلام فقط.</span></div>
+        </div>
+        <div class="nav">
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path></svg>الرئيسية</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>الأقسام</button>
+          <button class="ni on"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>الصيانة</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg>طلباتي</button>
+          <button class="ni"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>حسابي</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٢٠ أ · نموذج صيانة في الورشة<small>اختيار الفرع، الدراجة، المشكلة، الموعد المفضل</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>طلب صيانة في الورشة</h2></div>
+        <div class="body g12">
+          <div class="field"><label class="lbl">الفرع</label><div style="display:flex;flex-direction:column;gap:8px"><div class="opt-c on" style="flex-direction:row;align-items:center;padding:10px 12px"><span class="rad on"></span><b style="font-size:14px">فرع الدورة</b></div><div class="opt-c" style="flex-direction:row;align-items:center;padding:10px 12px"><span class="rad"></span><b style="font-size:14px">فرع حي القاهرة</b></div></div></div>
+          <div class="field"><label class="lbl">نوع الدراجة</label><button class="input sel"><span>هوندا CG 125</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+          <div class="field"><label class="lbl">سنة الصنع<span class="opt">اختياري</span></label><div class="input"><span class="muted">مثال: 2018</span></div></div>
+          <div class="field"><label class="lbl">نوع الخدمة</label><div class="chips"><span class="chip on">تغيير زيت</span><span class="chip">فرامل</span><span class="chip">سلسلة</span><span class="chip">كهرباء</span><span class="chip">أخرى</span></div></div>
+          <div class="field"><label class="lbl">وصف المشكلة</label><div class="input ta"><span class="muted">اكتب ما تلاحظه على الدراجة…</span></div></div>
+          <div class="field"><label class="lbl">صور<span class="opt">اختياري</span></label><div style="display:flex;gap:8px"><div class="photo-slot"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></div></div></div>
+          <div class="field"><label class="lbl">الموعد المفضل</label><div style="display:flex;gap:8px"><div class="input" style="flex:1"><span>٢٠ أكتوبر ٢٠٢٦</span></div><div class="input" style="flex:1"><span>صباحًا</span></div></div><span class="help">الموعد مقترح فقط ويُؤكَّد بعد المراجعة.</span></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">إرسال الطلب</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٢٠ ب · نموذج صيانة في موقعك<small>عنوان الزيارة بدل الفرع + رقم هاتف</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>طلب صيانة في موقعي</h2></div>
+        <div class="body g12">
+          <div class="alert warn"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"></path><path d="M12 10v5M12 18h.01"></path></svg><span>الخدمة في الموقع تخضع لتوفر الفنيين. ستؤكد الإدارة التغطية والرسوم بعد المراجعة.</span></div>
+          <div class="field"><label class="lbl">عنوان الزيارة</label><div class="addr on"><div><b>المنزل</b><div class="sm-t muted">بغداد — [المنطقة]، [التفاصيل]</div></div></div><button class="btn btn-text btn-sm">+ إضافة عنوان جديد</button></div>
+          <div class="field"><label class="lbl">رقم الهاتف للتواصل</label><div class="input"><span class="ltr muted">07XX XXX XXXX</span></div></div>
+          <div class="field"><label class="lbl">نوع الدراجة</label><button class="input sel"><span class="muted">اختر الطراز</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+          <div class="field"><label class="lbl">نوع الخدمة</label><div class="chips"><span class="chip">تغيير زيت</span><span class="chip on">بطارية</span><span class="chip">فرامل</span><span class="chip">أخرى</span></div></div>
+          <div class="field"><label class="lbl">وصف المشكلة</label><div class="input ta"><span class="muted">اكتب ما تلاحظه على الدراجة…</span></div></div>
+          <div class="field"><label class="lbl">الموعد المفضل</label><div style="display:flex;gap:8px"><div class="input" style="flex:1"><span class="muted">التاريخ</span></div><div class="input" style="flex:1"><span class="muted">الفترة</span></div></div></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">إرسال الطلب</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">٢١ · تم إرسال طلب الصيانة<small>الحالة: بانتظار المراجعة — ليس حجزًا مؤكدًا</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><h2 style="padding-inline-start:12px">الصيانة</h2></div>
+        <div class="body g16" style="align-items:center;text-align:center;padding-top:48px">
+          <div class="empty ok" style="background:none;gap:12px"><div style="width:72px;height:72px;border-radius:50%;background:var(--green-tint);display:flex;align-items:center;justify-content:center;margin:0 auto"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" style="width:36px;height:36px;color:var(--green)"><path d="M5 12l5 5 9-10"></path></svg></div><b style="font-size:20px">تم استلام طلب الصيانة</b><span style="font-size:14px;line-height:1.7;color:var(--charcoal)">طلبك الآن <b>بانتظار المراجعة</b>. سنتواصل معك لتأكيد الموعد والتفاصيل.</span></div>
+          <div class="card flat" style="width:100%;display:flex;flex-direction:column;gap:8px;text-align:start"><div class="kv"><span>رقم الطلب</span><b class="ltr">MR-2008</b></div><div class="kv"><span>الحالة</span><span class="bd newm">طلب جديد — بانتظار المراجعة</span></div><div class="kv"><span>نوع الخدمة</span><span>في الورشة — فرع الدورة</span></div><div class="kv"><span>الموعد المفضل</span><span>٢٠ أكتوبر ٢٠٢٦ · صباحًا</span></div></div>
+          <div class="alert info" style="width:100%;text-align:start"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>لن يُعتبر الموعد مؤكدًا إلا بعد إشعار من المتجر.</span></div>
+        </div>
+        <div class="stickybar" style="flex-direction:column;align-items:stretch;gap:8px"><button class="btn btn-primary btn-lg btn-block">عرض طلبات الصيانة</button><button class="btn btn-outline btn-block">العودة للرئيسية</button></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1760,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+deliverables/
+.secrets/
+mobile/build/
+node_modules/
+.dart_tool/
+admin/.env.local
+mobile/config.local.json
+backend/.env

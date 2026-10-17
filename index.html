@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171311">
+  <title>دكان سليم | مكتبة الشاشات</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="العودة إلى مكتبة الشاشات">
+      <span class="brand-mark" aria-hidden="true">د</span>
+      <span><strong>دكان سليم</strong><small>مكتبة الشاشات</small></span>
+    </a>
+    <label class="search">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <span class="visually-hidden">ابحث عن شاشة</span>
+      <input id="search" type="search" placeholder="ابحث عن شاشة..." autocomplete="off">
+      <kbd>/</kbd>
+    </label>
+    <span class="screen-count" id="screen-count" aria-live="polite"></span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="أقسام المشروع">
+      <p class="eyebrow">الأقسام</p>
+      <nav id="section-nav"></nav>
+      <div class="sidebar-note">
+        <span class="note-dot" aria-hidden="true"></span>
+        <span>نماذج تصميم قابلة للمعاينة<br><small>لا تتطلب إعداد قاعدة بيانات</small></span>
+      </div>
+    </aside>
+
+    <main id="main">
+      <section id="catalog" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow">منصة دكان سليم</p>
+          <h1 id="page-title">كل الشاشات، في مكان واحد.</h1>
+          <p class="intro-copy">تصفّح نماذج تطبيق العملاء ولوحة الإدارة ونظام التصميم من مكتبة واحدة.</p>
+        </div>
+        <div id="section-cards" class="section-cards"></div>
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow" id="list-eyebrow">المكتبة الكاملة</p>
+            <h2 id="list-title">استكشف الشاشات</h2>
+          </div>
+          <span id="result-count" class="result-count"></span>
+        </div>
+        <div id="screen-grid" class="screen-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>لا توجد شاشات تطابق بحثك.</p>
+      </section>
+
+      <section id="preview" aria-label="معاينة الشاشة" hidden>
+        <div class="preview-toolbar">
+          <button class="back-button" id="back-button" type="button"><span aria-hidden="true">→</span> رجوع للمكتبة</button>
+          <div class="preview-title">
+            <p class="eyebrow" id="preview-section"></p>
+            <h1 id="preview-name"></h1>
+          </div>
+          <a id="open-original" class="open-original" target="_blank" rel="noopener">فتح الأصل <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="preview-frame">
+          <iframe id="screen-frame" title="معاينة نموذج الشاشة" loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

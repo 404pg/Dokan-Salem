@@ -1,0 +1,16 @@
+{
+  "name": "dokan-local-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "express": "^5.1.0",
+    "msnodesqlv8": "^5.6.0",
+    "mssql": "^12.7.7"
+  }
+}

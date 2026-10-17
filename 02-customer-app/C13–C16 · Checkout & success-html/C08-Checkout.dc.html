@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>إتمام الطلب</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ds.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.stepper2{background:#FFFFFF;border-bottom:1px solid var(--line);padding:12px 16px 10px;display:flex;flex-direction:column;gap:8px}
+.stepper2 .lb{display:flex;justify-content:space-between;font-size:12px;color:var(--charcoal);font-weight:500}
+.stepper2 .lb b{color:var(--onyx)}
+.li-r{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.li-r:last-child{border-bottom:0}
+.li-r .im{width:48px;height:48px;border-radius:8px;background:var(--ph);display:flex;align-items:center;justify-content:center;color:var(--charcoal);flex:0 0 auto}
+.li-r .im .ic{width:24px;height:24px;stroke-width:1.4}
+.li-r .tx{flex:1;min-width:0;font-size:14px;line-height:1.4}
+.li-r .tx small{display:block;color:var(--charcoal);font-size:12px}
+.sec-t{font-size:16px;font-weight:700}
+.cash{width:44px;height:44px;border-radius:12px;background:var(--green-tint);color:var(--green-ink);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+</style>
+</helmet>
+<div class="ar sheet" dir="rtl" style="width:2190px;height:1320px">
+  <div class="sheet-h"><h1>الشاشات ١٣–١٦ · إتمام الطلب</h1><p>الدفع نقدًا عند الاستلام فقط، ورسوم التوصيل تُقرأ من قواعد المتجر. الدخول مطلوب قبل هذه الخطوات.</p><span class="sample">بيانات تجريبية — الرسوم والأسماء أمثلة</span></div>
+  <div class="srow">
+
+    <div>
+      <div class="cap">١٣ · بيانات الزبون والعنوان<small>عناوين محفوظة + تحقق من الحقول المطلوبة</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>إتمام الطلب</h2></div>
+        <div class="stepper2"><div class="steps"><i class="on"></i><i></i><i></i></div><div class="lb"><b>١ · البيانات</b><span>٢ · الوجهة</span><span>٣ · المراجعة</span></div></div>
+        <div class="body g16">
+          <div class="sec"><div class="sec-h"><span class="sec-t">العناوين المحفوظة</span><button>إدارة</button></div>
+            <div class="addr sel"><div class="chk rad"><i class="on" style="width:22px;height:22px"></i></div><div class="lt"><b>المنزل <span class="bd conf nodot" style="height:22px;font-size:12px">الافتراضي</span></b><p>بغداد — الدورة، [تفاصيل العنوان]</p></div></div>
+            <div class="addr"><div class="chk rad"><i style="width:22px;height:22px"></i></div><div class="lt"><b>عنوان جديد</b><p>أدخل بيانات عنوان مختلف</p></div></div>
+          </div>
+          <div class="field"><label class="lbl">الاسم الكامل<span class="req">*</span></label><input class="input" value="أحمد علي"></div>
+          <div class="field"><label class="lbl">رقم الهاتف<span class="req">*</span></label><div class="input dis"><span class="pre"><span class="ltr">+964</span></span><span class="ph-in ltr" style="flex:1;text-align:start">770 000 0000</span><span class="okmsg"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>موثّق</span></div></div>
+          <div class="fg" style="gap:12px"><div class="field"><label class="lbl">المحافظة<span class="req">*</span></label><button class="input sel"><span>بغداد</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div><div class="field"><label class="lbl">المنطقة / الحي<span class="req">*</span></label><button class="input sel"><span>الدورة</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div></div>
+          <div class="field"><label class="lbl">العنوان التفصيلي<span class="req">*</span></label><textarea class="input bad" rows="3" placeholder="الشارع، رقم الدار، أقرب نقطة دالة"></textarea><span class="err"><svg class="ic sm" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6M12 16.5h.01"></path></svg>العنوان التفصيلي مطلوب لتوصيل الطلب</span></div>
+          <div class="field"><label class="lbl">تعليمات التوصيل<span class="opt">اختياري</span></label><textarea class="input" rows="2" placeholder="مثال: الاتصال قبل الوصول"></textarea></div>
+          <div class="chk"><i class="on"><svg class="ic sm" aria-hidden="true" style="stroke-width:3" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></i><span style="font-size:14px">حفظ هذا العنوان لطلباتي القادمة</span></div>
+          <span class="help"><span style="color:var(--orange-ink);font-weight:700">*</span> حقل مطلوب</span>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">التالي: وجهة التوصيل</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٤ أ · وجهة التوصيل ورسومها<small>الرسوم من قاعدة «بغداد» في إعدادات الإدارة</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>إتمام الطلب</h2></div>
+        <div class="stepper2"><div class="steps"><i class="dn"></i><i class="on"></i><i></i></div><div class="lb"><span>١ · البيانات</span><b>٢ · الوجهة</b><span>٣ · المراجعة</span></div></div>
+        <div class="body g16">
+          <div class="sec"><span class="sec-t">وجهة التوصيل</span>
+            <div class="fg" style="gap:12px"><div class="field"><label class="lbl">المحافظة<span class="req">*</span></label><button class="input sel"><span>بغداد</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div><div class="field"><label class="lbl">المنطقة / الحي<span class="req">*</span></label><button class="input sel"><span>الدورة</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div></div>
+            <div class="field"><label class="lbl">العنوان التفصيلي<span class="req">*</span></label><textarea class="input" rows="2">[الشارع، رقم الدار]</textarea></div>
+            <div class="field"><label class="lbl">أقرب نقطة دالة<span class="opt">اختياري</span></label><input class="input" value="" placeholder="مثال: قرب مدرسة أو جامع"></div>
+            <button class="btn btn-outline btn-block"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>تحديد الموقع على الخريطة (اختياري)</button>
+            <span class="help">لا يتطلب الطلب علامة خريطة دقيقة؛ العنوان النصي كافٍ.</span>
+          </div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:10px">
+            <div class="row-s"><div class="ico-c" style="width:40px;height:40px"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"></path><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg></div><div class="grow"><div class="sb">رسوم التوصيل — بغداد</div><div class="sm-t muted">حسب قاعدة التوصيل المعتمدة</div></div><b style="font-size:18px">5,000 <span class="sm-t">د.ع</span></b></div>
+            <hr class="hr">
+            <div class="kv"><span>مدة التوصيل المتوقعة</span><span class="muted">[تظهر إن ضُبطت في الإعدادات]</span></div>
+            <div class="kv"><span>الحد الأدنى للطلب</span><span class="muted">[يظهر إن وُجد]</span></div>
+          </div>
+          <div class="alert info"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>إذا غيّرت المحافظة أو المنطقة تُعاد حاسبة الرسوم تلقائيًا ويظهر المبلغ الجديد قبل التأكيد.</span></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">التالي: مراجعة الطلب</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٤ ب · رسوم غير محددة<small>بدون اختراع مبلغ — الإدارة تؤكد الرسوم</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>إتمام الطلب</h2></div>
+        <div class="stepper2"><div class="steps"><i class="dn"></i><i class="on"></i><i></i></div><div class="lb"><span>١ · البيانات</span><b>٢ · الوجهة</b><span>٣ · المراجعة</span></div></div>
+        <div class="body g16">
+          <div class="sec"><span class="sec-t">وجهة التوصيل</span>
+            <div class="fg" style="gap:12px"><div class="field"><label class="lbl">المحافظة<span class="req">*</span></label><button class="input sel"><span>المثنى</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div><div class="field"><label class="lbl">المنطقة / الحي</label><button class="input sel"><span class="muted">غير مُحدَّدة</span><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button></div></div>
+            <div class="field"><label class="lbl">العنوان التفصيلي<span class="req">*</span></label><textarea class="input" rows="2">[الشارع، رقم الدار]</textarea></div>
+          </div>
+          <div class="alert warn"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"></path><path d="M12 10v5M12 18h.01"></path></svg><span><b>رسوم هذه الوجهة تحتاج إلى تأكيد.</b> لم نحدد مبلغًا لها بعد. يمكنك المتابعة وسنتواصل معك لتأكيد الرسوم قبل تجهيز الطلب.</span></div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:10px">
+            <div class="kv"><span>المجموع الفرعي</span><span>114,000 د.ع</span></div>
+            <div class="kv"><span>رسوم التوصيل</span><span class="bd pend nodot">بانتظار التأكيد</span></div>
+            <div class="kv tot"><span>الإجمالي حاليًا</span><span>114,000 د.ع</span></div>
+            <span class="help">الإجمالي النهائي = المجموع الفرعي + رسوم التوصيل بعد تأكيدها.</span>
+          </div>
+          <div class="chk"><i class="on"><svg class="ic sm" aria-hidden="true" style="stroke-width:3" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></i><span style="font-size:14px;line-height:1.6">أوافق على تأكيد رسوم التوصيل قبل تجهيز الطلب</span></div>
+        </div>
+        <div class="stickybar"><button class="btn btn-primary btn-lg btn-block">التالي: مراجعة الطلب</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٥ · مراجعة الطلب<small>الدفع عند الاستلام + مراجعة المتجر</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="appbar"><button class="ib" aria-label="رجوع"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button><h2>مراجعة الطلب</h2></div>
+        <div class="stepper2"><div class="steps"><i class="dn"></i><i class="dn"></i><i class="on"></i></div><div class="lb"><span>١ · البيانات</span><span>٢ · الوجهة</span><b>٣ · المراجعة</b></div></div>
+        <div class="body g12">
+          <div class="card flat" style="padding:4px 14px"><div class="sec-h" style="padding:10px 0 4px"><span class="sec-t">المنتجات (7)</span><button>تعديل السلة</button></div>
+            <div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v3l3 3v12H6V9l3-3z"></path></svg></div><div class="tx">زيت محرك موتول 7100<small>2 × 39,000 د.ع</small></div><b class="sm-t">78,000</b></div>
+            <div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg></div><div class="tx">تيل فرامل أمامي<small>1 × 18,000 د.ع</small></div><b class="sm-t">18,000</b></div>
+            <div class="li-r"><div class="im"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v5H9zM10 8v7h4V8M12 15v4"></path></svg></div><div class="tx">شمعة إشعال<small>4 × 4,500 د.ع</small></div><b class="sm-t">18,000</b></div>
+          </div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:8px">
+            <div class="kv"><span>المجموع الفرعي</span><span>114,000 د.ع</span></div>
+            <div class="kv"><span>الخصم المطبّق على الأسعار</span><span style="color:var(--green-ink)">- 12,000 د.ع</span></div>
+            <div class="kv"><span>رسوم التوصيل — بغداد</span><span>5,000 د.ع</span></div>
+            <div class="kv tot"><span>الإجمالي</span><span>119,000 د.ع</span></div>
+          </div>
+          <div class="card flat" style="display:flex;flex-direction:column;gap:6px;font-size:14px"><div class="sec-h"><span class="sec-t">بيانات التوصيل</span><button>تعديل</button></div><span>أحمد علي · <span class="ltr">+964 770 000 0000</span></span><span class="muted">بغداد — الدورة، [تفاصيل العنوان]</span></div>
+          <div class="card flat row-s" style="gap:12px"><div class="cash"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2.5"></circle><path d="M6 12h.01M18 12h.01"></path></svg></div><div class="grow"><div class="sb">الدفع نقدًا عند الاستلام</div><div class="sm-t muted">ادفع المبلغ للمندوب عند استلام طلبك</div></div></div>
+          <div class="alert info"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>يخضع تأكيد الطلب لمراجعة المتجر، وقد نتواصل معك لتأكيد التفاصيل.</span></div>
+        </div>
+        <div class="stickybar" style="flex-direction:column;align-items:stretch;gap:8px"><div class="kv" style="font-weight:700;font-size:16px"><span>الإجمالي عند الاستلام</span><span>119,000 د.ع</span></div><button class="btn btn-primary btn-lg btn-block">تأكيد الطلب</button></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cap">١٦ · نجاح الطلب<small>بدون وعد بموعد تسليم غير مضبوط</small></div>
+      <div class="phone" style="height:1100px">
+        <div class="scr" style="background:#FFFFFF;padding:32px 20px 20px;gap:18px;align-items:stretch">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding-top:20px">
+            <div style="width:88px;height:88px;border-radius:50%;background:var(--green-tint);border:2px solid var(--green);color:var(--green-ink);display:flex;align-items:center;justify-content:center"><svg class="ic" style="width:44px;height:44px;stroke-width:2.2" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg></div>
+            <h1 style="font-size:26px;font-weight:700">تم استلام طلبك</h1>
+            <p class="muted" style="font-size:15px;line-height:1.7;max-width:300px">شكرًا لك. سيراجع المتجر الطلب ويتواصل معك للتأكيد.</p>
+          </div>
+          <div class="card flat" style="background:var(--lav);display:flex;flex-direction:column;gap:10px">
+            <div class="kv"><span>رقم الطلب</span><b class="ltr" style="font-size:17px">DS-1042</b></div>
+            <div class="kv" style="align-items:center"><span>الحالة</span><span class="bd pend">بانتظار تأكيد المتجر</span></div>
+            <hr class="hr">
+            <div class="kv"><span>الإجمالي</span><b>119,000 د.ع</b></div>
+            <div class="kv"><span>طريقة الدفع</span><span>الدفع نقدًا عند الاستلام</span></div>
+            <div class="kv"><span>العنوان</span><span style="text-align:end;max-width:190px">بغداد — الدورة، [تفاصيل العنوان]</span></div>
+          </div>
+          <div class="alert info"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5h.01"></path></svg><span>ستصلك إشعارات بتأكيد الطلب وتجهيزه وخروجه للتوصيل.</span></div>
+          <div style="margin-top:auto;display:flex;flex-direction:column;gap:10px"><button class="btn btn-primary btn-lg btn-block">عرض الطلب</button><button class="btn btn-outline btn-lg btn-block">متابعة التسوق</button></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2190,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

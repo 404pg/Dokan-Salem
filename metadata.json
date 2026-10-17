@@ -1,0 +1,6 @@
+{
+  "name": "دكان سليم | Dokan Saleem - قطع غيار وصيانة دراجات نارية",
+  "description": "منصة دكان سليم لقطع غيار الدراجات النارية الأصلية وخدمات الصيانة والورش والفيتر الجوال في بغداد والعراق",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
